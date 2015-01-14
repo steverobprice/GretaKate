@@ -1,0 +1,32 @@
+﻿@using GretaKate.Web.Models;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<NavigationModel>
+
+<div class="row">
+    <div class="large-12 columns">
+        <nav class="top-bar" data-topbar role="navigation">
+            <section class="top-bar-section">
+                <ul class="left">
+                    @foreach (var item in Model.NavigationItems)
+                    {
+                        if (item.HasChildren)
+                        {
+                            <li class="has-dropdown">
+                                <a href="@item.Url">@item.Name</a>
+                                <ul class="dropdown">
+                                    @foreach (var child in item.Children)
+                                    {
+                                        <li><a href="@child.Url">@child.Name</a></li>
+                                    }
+                                </ul>
+                            </li>
+                        }
+                        else 
+                        { 
+                            <li><a href="@item.Url">@item.Name</a></li>
+                        }
+                    }
+                </ul>
+            </section>
+        </nav>
+    </div>
+</div>

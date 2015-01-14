@@ -1,0 +1,33 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="/css/flexslider.css" type="text/css" />
+
+<div class="wrapper" ng-app="instagram" >
+    <div class="container" ng-controller="InstagramCtrl">
+        <div class="row">
+            <div id="instagram-gallery" class="large-12 columns">
+                <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4" when-scrolled="loadPhotos()">
+                    <li ng-repeat="photo in photos">
+                        <div class="image-wrapper">
+                            <img class="main" ng-src="{{photo.images.low_resolution.url}}" />
+                            <span class="heart">{{photo.likes.count}}</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div id="loading" ng-show="isLoading">
+                <img src="/css/images/ajax_loader.gif" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+<script src="/js/instagram.gallery.js"></script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.fancybox.js"></script>

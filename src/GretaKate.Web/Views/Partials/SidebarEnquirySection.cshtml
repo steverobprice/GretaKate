@@ -1,0 +1,20 @@
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+@if (CurrentPage.enquiryForm)
+{
+    <section>
+        @if (!string.IsNullOrEmpty(CurrentPage.enquiryHeading))
+        {
+            <header>
+                <h3>@CurrentPage.enquiryHeading</h3>
+            </header>
+        }
+        @if (!string.IsNullOrEmpty(CurrentPage.enquirySummary))
+        {
+            <p>@CurrentPage.enquirySummary</p>
+        }
+
+        @{ Html.RenderPartial("SidebarEnquiryForm", new GretaKate.Web.Models.EnquiryModel()); }
+
+    </section>
+}

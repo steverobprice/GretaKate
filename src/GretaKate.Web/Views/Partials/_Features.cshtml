@@ -1,0 +1,30 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{    
+    var features = CurrentPage.Children.Where("featuredPage");
+}
+@if(features.Any())
+{
+    <div class="row features">
+        <div class="large-12 columns">
+            <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3">
+            @foreach (var feature in features)
+            {
+                <li>
+                    <a href="@feature.Url">
+                        <div class="header">
+                            Collections
+                            <span></span>
+                        </div>
+                        <img src="@Umbraco.Media((int)feature.heroImage).Url" class="full-width">
+                    </a>
+                    <div class="content">
+                        <h4><a href="@feature.Url">@feature.Title</a></h4>
+                        <div class="divider"></div>
+                        <div class="summary">@feature.Summary</div>
+                    </div>
+                </li>
+            }
+            </ul>
+        </div>
+    </div>
+}

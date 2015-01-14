@@ -1,0 +1,51 @@
+body {
+	text-transform: $body-text-transform;
+}
+
+h1, h2, h3, h4, h5, h6, nav {
+	margin: 0;
+	font-family: $heading-font-family;
+	color: $body-font-color;
+}
+
+p {
+	line-height: 1.8;
+}
+
+a {
+	color: $body-font-color;
+}
+
+a:hover {
+	color: $body-font-color;
+}
+
+img.full-width {
+	width: 100%;
+}
+
+.row.divider {
+	margin-top: 40px !important;
+	border-top: 1px #B2B2B2 solid;
+	padding-top: 60px;
+}
+
+div.small-divider {
+	margin: 0 auto 15px auto;
+	width: 25px;
+	border-bottom: 1px #666 solid;
+}
+
+#headerImage {
+	height: 212px;
+	overflow: hidden;
+}
+
+@media #{$small-only} {
+	#headerImage {
+		height: 45px;
+		position: absolute;
+		top: 0;
+		z-index: -10;
+	}
+ }

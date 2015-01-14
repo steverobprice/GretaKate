@@ -1,0 +1,27 @@
+﻿@using GretaKate.Web.Models;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<DressesModel>
+@{
+    Layout = "_Layout.cshtml";
+}
+
+@if (Model.Dresses.Any())
+{
+    <div class="row features">
+        <div class="large-12 columns">
+            <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
+                @foreach (var dress in Model.Dresses)
+                {
+                    <li>
+                        <a href="@dress.Url" data-reveal-id="modal-@dress.Id">
+                            <img src="@dress.HeroImage" class="full-width">
+                        </a>
+                        <div class="content">
+                            <h4><a href="@dress.Url" data-reveal-id="modal-@dress.Id">@dress.Title</a></h4>
+                            <div class="divider"></div>
+                        </div>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+}

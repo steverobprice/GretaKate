@@ -1,0 +1,57 @@
+﻿@*
+    Blog post layout.
+*@
+@using uBlogsy.BusinessLogic
+@using System.Linq
+@using uBlogsy.Common.Extensions
+@inherits UmbracoTemplatePage
+@{
+    Layout = "_Layout.cshtml";
+    
+    var tag = Request.QueryString["tag"];
+    var label = Request.QueryString["label"];
+    var author = Request.QueryString["author"];
+    var searchTerm = Request.QueryString["search"];
+    var commenter = Request.QueryString["commenter"];
+    int page = int.TryParse(Request.QueryString["page"], out page) ? page : 1;
+    var year = Request.QueryString["year"];
+    var month = Request.QueryString["month"];
+    var day = Request.QueryString["day"];
+    var prev = PostService.Instance.GetNextPost(Model.Content, tag, label, author, searchTerm, commenter, year, month, day);
+    var next = PostService.Instance.GetPreviousPost(Model.Content, tag, label, author, searchTerm, commenter, year, month, day);
+}
+
+<div class="row blog">
+    <div class="large-7 columns">
+        @Html.Partial("uBlogsy/Post/uBlogsyPostShowPost", new ViewDataDictionary(ViewData) { { "Node", Model.Content }, { "UseAddthis", true }, { "GravatarSize", 50 } })
+    </div>
+
+    <div class="large-4 large-offset-1 columns">
+
+        @*list of related posts*@
+        @Html.Partial("uBlogsy/Post/uBlogsyPostListRelatedPosts", new ViewDataDictionary(ViewData) { { "Node", Model.Content }, { "ItemLimit", 5 }, { "MatchCount", 1 }, { "RelatedAlias", string.Empty } })
+
+
+        @*list of blog archive*@
+        @Html.Partial("uBlogsy/Widgets/uBlogsyWidgetListPostArchive", new ViewDataDictionary(ViewData) { { "AltLayout", false } })
+
+        @*the awesome tag cloud*@
+        @Html.Partial("uBlogsy/Widgets/uBlogsyWidgetListTags", new ViewDataDictionary(ViewData) { { "ShowCount", true } })
+
+        @*list comments - install uCommentsy, then uncomment this line*@
+        @try
+        {
+            @Html.Partial("uCommentsy/uCommentsyListComments", new ViewDataDictionary(ViewData) { { "ItemLimit", -1 } })
+        }
+        catch (Exception) { }
+
+        @*render contact form - install uCommentsy, then uncomment this line**@
+        @try
+        {
+            @Html.Action("Index", "uCommentsyContactFormSurface", new { CurrentPage })
+        }
+        catch (Exception) { }
+
+    </div>
+
+</div>

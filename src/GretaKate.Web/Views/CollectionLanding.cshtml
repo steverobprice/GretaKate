@@ -1,0 +1,32 @@
+﻿@using GretaKate.Web.Models;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<CollectionLandingModel>
+@{
+    Layout = "_Layout.cshtml";
+}
+
+@if (Model.Collections.Any())
+{
+    <div class="row features">
+        <div class="large-12 columns">
+            <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2">
+                @foreach (var collection in Model.Collections)
+                {
+                    <li>
+                        <a href="@collection.Url">
+                            <div class="header">
+                                @collection.Title
+                                <span></span>
+                            </div>
+                            <img src="@collection.HeroImage" class="full-width">
+                        </a>
+                        <div class="content">
+                            <h4><a href="@collection.Url">@collection.Title</a></h4>
+                            <div class="divider"></div>
+                            <div class="summary">@collection.Summary</div>
+                        </div>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+}

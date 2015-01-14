@@ -1,0 +1,81 @@
+﻿@using GretaKate.Web.Models;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<DressModel>
+
+
+@if (!string.IsNullOrEmpty(Model.Heading) || !string.IsNullOrEmpty(Model.Content))
+{
+    <div class="row">
+        <div class="9u">
+            @if (!string.IsNullOrEmpty(Model.Heading))
+            {
+                <h2>@Model.Heading</h2>
+            }
+            @if (!string.IsNullOrEmpty(Model.Content))
+            {
+                @Html.Raw(Model.Content) 
+            }
+        </div>
+    </div>
+}
+
+@if (Model.Dresses.Any())
+{
+    <div class="row">
+        <div class="12u">
+            <div class="row">
+                @foreach (var dress in Model.Dresses)
+                {
+                    <div class="3u">
+                        @*<div class="image-wrapper">*@
+                            <a href="#dress-@dress.Id" class="dressModal">
+                                <img src="@dress.HeroImage" class="image full" />
+                                <span>@dress.Title</span>
+                            </a>
+                        @*</div>*@
+                        @*<a href="#dress" rel="dress" class="dressModal fancybox">*@
+                            <div id="dress-@dress.Id" class="dressModal" style="display: none; max-width: 40em;">
+                                <div class="row">
+                                    <div class="6u">
+                                        
+                                        <div class="imagegallery flexslider">
+                                            <ul class="slides">
+                                                @foreach (var image in dress.Images)
+                                                {
+                                                    <li data-thumb="@image">
+                                                        <img class="image full" src="@image" />
+                                                    </li>
+                                                    
+                                                    @*if (dress.Images.IndexOf(image) > 0)
+                                                    {
+                                                        <li data-thumb="@image">
+                                                            <img class="image full" data-src="@image" />
+                                                        </li>
+                                                    }
+                                                    else
+                                                    {
+                                                        <li data-thumb="@image">
+                                                            <img class="image full" src="@image" />
+                                                        </li>
+                                                    }*@
+                                                }
+                                            </ul>
+                                        </div>
+                                        <div class="flex-container"></div>
+                                    </div>
+                                    <div class="6u  skel-cell-important">
+                                        <h3>@dress.Title</h3>
+                                        @if (!string.IsNullOrEmpty(dress.Price))
+                                        {
+                                            <p>@dress.Price</p>
+                                        }
+                                        <p>@dress.Description</p>
+                                    </div>
+                                </div>
+                            </div>
+                        @*</a>*@
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+}

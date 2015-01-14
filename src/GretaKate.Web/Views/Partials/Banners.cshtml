@@ -1,0 +1,45 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{    
+    var bannerItems = CurrentPage.BannerItems.OrderBy("displayOrder").Take(5);
+}
+@if(bannerItems.Any()){
+	
+	<!-- Banner -->
+	<div id="banner-wrapper" class="wrapper">
+		
+		<section id="hero">
+			<div id="bannergallery" class="flexslider">
+				<ul class="slides">
+				@foreach(var bannerItem in bannerItems)
+                {                
+					<li>
+						<a href="@bannerItem.Link">
+							<div class="container">
+								<div class="content">
+									@if(!string.IsNullOrEmpty(bannerItem.Heading))
+									{
+										<h2>@bannerItem.Heading</h2>
+                                        <br />
+									}
+                                    @bannerItem.Content
+									@*@{
+                                        var content = bannerItem.Content.ToString().Split('\n');
+                                        foreach (var item in content)
+                                        {
+                                            <p>@item</p>
+                                            <br />
+                                        }
+                                    }*@
+								</div>
+							</div>
+                            <img src="@Umbraco.Media((int)bannerItem.Image).Url" />
+						</a>
+					</li> 
+				}                 
+				</ul>
+			</div>
+		</section>
+		
+	</div>
+
+}

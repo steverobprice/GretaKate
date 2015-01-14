@@ -1,0 +1,41 @@
+﻿@using GretaKate.Web.Models;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<FooterModel>
+<footer>
+    <div class="row">
+        <div class="large-4 columns">
+            <h5>@Model.LocationHeading</h5>
+            @Html.Raw(Model.Location)
+        </div>
+        <div class="large-4 columns">
+            <h5>@Model.OpeningHoursHeading</h5>
+            @Html.Raw(Model.OpeningHours)
+        </div>
+        <div class="large-4 columns">
+            <h5>@Model.SocialHeading</h5>
+            @if (!string.IsNullOrEmpty(Model.FacebookLink))
+            { 
+                <a href="@Model.FacebookLink" target="_blank">
+                    <img src="~/Images/facebook-48.png" />
+                </a>
+            }
+            @if (!string.IsNullOrEmpty(Model.InstagramLink))
+            {
+                <a href="@Model.InstagramLink" target="_blank">
+                    <img src="~/Images/instagram-48.png" />
+                </a>
+            }
+            @if (!string.IsNullOrEmpty(Model.PinterestLink))
+            {
+                <a href="@Model.PinterestLink" target="_blank">
+                    <img src="~/Images/pinterest-48.png" />
+                </a>
+            }
+            @if (!string.IsNullOrEmpty(Model.YouTubeLink))
+            {
+                <a href="@Model.YouTubeLink" target="_blank">
+                    <img src="~/Images/youtube-48.png" />
+                </a>
+            }
+</div>
+    </div>
+</footer>

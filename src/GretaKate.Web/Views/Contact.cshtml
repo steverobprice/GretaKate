@@ -1,0 +1,19 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "_Layout.cshtml";
+}
+
+<div class="row contact">
+    <div class="large-6 columns">
+        <h2>@CurrentPage.Title</h2>
+        <div class="small-divider"></div>
+        @Html.Raw(CurrentPage.contactDetails)
+        @{ Html.RenderPartial("EnquiryForm", new GretaKate.Web.Models.EnquiryModel()); }
+    </div>
+    <div class="large-6 columns">
+        <div id="map_canvas"></div>
+    </div>
+</div>
+
+<script src="/js/jquery.min.js"></script>
+<script src="//maps.googleapis.com/maps/api/js?sensor=false"></script>

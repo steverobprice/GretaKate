@@ -1,0 +1,44 @@
+﻿@using GretaKate.Web.Models;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<DressModel>
+@{
+    Layout = "_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="large-6 columns">
+        <div class="row">
+            <div class="large-12 columns">
+                <ul id="imageGallery" data-orbit data-options="pause_on_hover: false; slide_number: false; timer: false; bullets: false;">
+                    @foreach (var image in Model.Dress.Images)
+                    {
+                        <li data-orbit-slide="@image.Id">
+                            <img src="@image.Url" class="full-width">
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-12 columns">
+                <ul id="galleryThumbnails" class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+                    @foreach (var image in Model.Dress.Images)
+                    {
+                        var activeClass = Model.Dress.Images.IndexOf(image) == 0 ? "active" : string.Empty;
+                        <li>
+                            <a data-orbit-link="@image.Id">
+                                <img id="galleryThumb-@image.Id" src="@image.Url" class="full-width @activeClass">
+                            </a>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="large-6 columns">
+        <div class="article">
+            <h2>@Model.Dress.Title</h2>
+            <div class="small-divider"></div>
+            <p>@Model.Dress.Description</p>
+        </div>
+    </div>
+</div>

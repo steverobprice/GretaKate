@@ -1,0 +1,28 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{    
+    var bannerItems = CurrentPage.BannerItems.OrderBy("displayOrder").Take(5);
+}
+@if(bannerItems.Any())
+{
+    <div class="banner">
+        <ul data-orbit data-options="animation:fade; pause_on_hover:false; slide_number:false; timer: false;">
+        @foreach (var bannerItem in bannerItems)
+        {
+            <li>
+                <a href="@bannerItem.Link">
+                    <div class="container">
+                        <div class="content">
+                            @if (!string.IsNullOrEmpty(bannerItem.Heading))
+                            {
+                                <h2>@bannerItem.Heading</h2>
+                            }
+                            <h3>See More</h3>
+                        </div>
+                        <img src="@Umbraco.Media((int)bannerItem.Image).Url" class="full-width">
+                    </div>
+                </a>
+            </li>
+        }
+        </ul>
+    </div>
+}

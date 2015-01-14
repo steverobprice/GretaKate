@@ -1,0 +1,21 @@
+﻿@using umbraco.MacroEngines
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+@if(CurrentPage.HasValue("relatedContent"))
+{
+	dynamic contentItem = new DynamicNode((int)CurrentPage.RelatedContent);
+	dynamic heroImage = new DynamicMedia(contentItem.HeroImage);
+	
+	<section>
+		<a href="@contentItem.Url" class="image full">
+			<img src="@heroImage.UmbracoFile" alt="" />
+		</a>
+		<header>
+			<h3>@contentItem.Title</h3>
+		</header>
+		<p>@contentItem.Summary</p>
+		<ul class="actions">
+			<li><a href="@contentItem.Url" class="button">@contentItem.Title</a></li>
+		</ul>
+	</section>
+}

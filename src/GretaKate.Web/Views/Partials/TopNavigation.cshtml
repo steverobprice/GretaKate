@@ -1,0 +1,41 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var homePage = CurrentPage.AncestorsOrSelf(1).First();
+
+    // The menu items we want are all of the children of the homepage
+    // We also check if "Hide in navigation" is on in the menu, we shouldn't show hidden items
+    var menuItems = homePage.Children.Where("Visible"); //homePage.Children.Where("HideInNavigation == false");
+}
+<!-- Nav -->
+<nav id="nav">
+	<ul>
+		@{
+			var itemCount = 0;
+			var middle = Math.Ceiling(menuItems.Count() / 2D);
+			foreach (var item in menuItems)
+        	{
+            	@* If the Id of the item is the same as the Id of the current page then we want to add the class "current_page_item" *@
+            	@* Otherwise, we set the class to null, that way it will not even be added to the <li> element *@
+            	@*<li class="@(itemCount == middle ? "break" : null)"><a href="@item.Url">@item.Name</a></li>
+				itemCount++;*@
+                var children = item.Children.Where("Visible");
+                if (children.Count() > 0)
+                {
+                    <li class="opener">
+                        <a href="@item.Url">@item.Name</a>
+                        <ul>
+                            @foreach (var child in children)
+                            {
+                                <li><a href="@child.Url">@child.Name</a></li>
+                            }
+                        </ul>
+                    </li>
+                }
+                else
+                {
+                   <li><a href="@item.Url">@item.Name</a></li> 
+                }
+        	}
+		}
+    </ul>
+</nav>

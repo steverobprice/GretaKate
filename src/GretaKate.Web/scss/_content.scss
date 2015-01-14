@@ -1,0 +1,46 @@
+.article {
+	padding: 15px 0 0 0;
+	letter-spacing: 1px;
+	text-transform: none;
+
+	h2 {
+		font-weight: bold;
+		text-align: center;
+		text-transform: $body-text-transform;
+	}
+}
+
+@media #{$large-up} {
+	.article {
+		padding: 15px 5px 0 0px;
+		text-align: center;
+	}
+ }
+
+.image-gallery {
+	padding-top: 30px;
+}
+
+#imageGallery {
+	li {
+		img {
+			margin: 0 auto;
+		}
+	}
+}
+
+#galleryThumbnails {
+	padding-top: 15px;
+
+	li {
+		a {
+			img {
+				opacity: 0.5;
+			}
+
+			img.active {
+				opacity: 1;
+			}
+		}
+	}
+}

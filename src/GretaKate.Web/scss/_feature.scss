@@ -1,0 +1,56 @@
+.features {
+	
+	.columns > ul > li {
+		position: relative;
+		padding: 0;
+		overflow: hidden;
+
+		a > .header {
+			background-color:rgba(0,0,0,0.5);
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 104px;
+			z-index: 1;
+			padding-top: 32px;
+			font-family: $heading-font-family;
+			color: #FFF;
+			text-align: center;
+			letter-spacing: 1px;
+
+			> span {
+				background: url('images/dotted-border.png');
+				display: block;
+				width: 144px;
+				height: 4px;
+				margin: 8px auto 0 auto;
+			}
+		}
+
+		> .content {
+			padding: 14px 0 40px 0;
+			text-align: center;
+			letter-spacing: 2px;
+
+			> h4 {
+				padding-bottom: 6px;
+				font-size: 20px;
+				font-weight: bold;
+			}
+
+			> .divider {
+				margin: 0 auto;
+				width: 25px;
+				border-bottom: 1px #666 solid;
+			}
+
+			> .summary {
+				padding: 15px 10px 0px 10px;
+				line-height: 1.8;
+				word-spacing: 3px;
+			}
+		}
+	}
+
+	
+}

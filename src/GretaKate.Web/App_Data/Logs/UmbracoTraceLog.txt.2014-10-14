@@ -1,0 +1,254 @@
+﻿2014-10-14 19:42:06,445 [54] INFO  umbraco.BusinessLogic.Log - [Thread 105] Log scrubbed.  Removed all items older than 2014-08-15 19:42:06
+2014-10-14 19:42:06,448 [54] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 105] Application shutdown. Reason: MaxRecompilationsReached
+2014-10-14 19:42:09,302 [71] INFO  Umbraco.Core.PluginManager - [Thread 18] Determining hash of code files on disk
+2014-10-14 19:42:09,315 [71] INFO  Umbraco.Core.PluginManager - [Thread 18] Hash determined (took 5ms)
+2014-10-14 19:42:09,322 [71] INFO  Umbraco.Core.PluginManager - [Thread 18] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2014-10-14 19:42:09,340 [71] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 38 (took 16ms)
+2014-10-14 19:42:09,413 [71] INFO  Umbraco.Core.PluginManager - [Thread 18] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2014-10-14 19:42:09,414 [71] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 0ms)
+2014-10-14 19:42:09,414 [71] INFO  Umbraco.Core.PluginManager - [Thread 18] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+2014-10-14 19:42:09,415 [71] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 14 (took 0ms)
+2014-10-14 19:42:09,429 [71] INFO  Umbraco.Core.PluginManager - [Thread 18] Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+2014-10-14 19:42:09,430 [71] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 8 (took 0ms)
+2014-10-14 19:42:09,430 [71] INFO  Umbraco.Core.PluginManager - [Thread 18] Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+2014-10-14 19:42:09,431 [71] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 30 (took 1ms)
+2014-10-14 19:42:09,434 [71] INFO  Umbraco.Core.PluginManager - [Thread 18] Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+2014-10-14 19:42:09,434 [71] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 0ms)
+2014-10-14 19:42:09,435 [71] INFO  Umbraco.Core.PluginManager - [Thread 18] Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+2014-10-14 19:42:09,435 [71] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 0ms)
+2014-10-14 19:42:10,040 [71] INFO  Umbraco.Core.PluginManager - [Thread 18] Starting resolution types of umbraco.interfaces.IApplication
+2014-10-14 19:42:10,040 [71] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 0ms)
+2014-10-14 19:42:10,313 [71] INFO  Umbraco.Core.PluginManager - [Thread 18] Starting resolution types of Umbraco.Web.Trees.TreeController
+2014-10-14 19:42:10,313 [71] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 0ms)
+2014-10-14 19:42:10,323 [71] INFO  Umbraco.Core.PluginManager - [Thread 18] Starting resolution types of umbraco.interfaces.ITree
+2014-10-14 19:42:10,323 [71] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of umbraco.interfaces.ITree, found 19 (took 0ms)
+2014-10-14 19:42:10,330 [71] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 18] Initializing Examine and binding to business logic events
+2014-10-14 19:42:10,330 [71] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 18] Adding examine event handlers for index providers: 3
+2014-10-14 19:42:10,682 [71] INFO  umbraco.content - [Thread 87] Loading content from disk cache...
+2014-10-14 19:42:10,769 [71] INFO  Umbraco.Core.PluginManager - [Thread 87] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+2014-10-14 19:42:10,770 [71] INFO  Umbraco.Core.PluginManager - [Thread 87] Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 22 (took 0ms)
+2014-10-14 19:42:11,076 [71] INFO  Umbraco.Core.PluginManager - [Thread 87] Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+2014-10-14 19:42:11,076 [71] INFO  Umbraco.Core.PluginManager - [Thread 87] Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 43 (took 0ms)
+2014-10-14 19:55:50,583 [71] INFO  Umbraco.Core.PluginManager - [Thread 72] Starting resolution types of umbraco.interfaces.ICacheRefresher
+2014-10-14 19:55:50,584 [71] INFO  Umbraco.Core.PluginManager - [Thread 72] Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 20 (took 1ms)
+2014-10-14 19:55:50,667 [71] INFO  Umbraco.Web.Security.WebSecurity - [Thread 72] User Id: 0 logged in
+2014-10-14 19:55:50,828 [71] INFO  Umbraco.Core.PluginManager - [Thread 105] Starting resolution types of Umbraco.Web.Trees.TreeController
+2014-10-14 19:55:50,828 [71] INFO  Umbraco.Core.PluginManager - [Thread 105] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 0ms)
+2014-10-14 19:55:50,888 [71] INFO  Umbraco.Core.PluginManager - [Thread 85] Starting resolution types of umbraco.interfaces.ITree
+2014-10-14 19:55:50,889 [71] INFO  Umbraco.Core.PluginManager - [Thread 85] Completed resolution of types of umbraco.interfaces.ITree, found 35 (took 0ms)
+2014-10-14 19:55:50,916 [71] INFO  Umbraco.Core.PluginManager - [Thread 85] Starting resolution types of umbraco.interfaces.IAction
+2014-10-14 19:55:50,917 [71] INFO  Umbraco.Core.PluginManager - [Thread 85] Completed resolution of types of umbraco.interfaces.IAction, found 34 (took 1ms)
+2014-10-14 19:56:15,518 [71] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 20] Content 'Formal Collection' with Id '2226' has been published.
+2014-10-14 19:56:16,692 [71] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 20] Content 'Dress 1' with Id '2227' has been published.
+2014-10-14 19:56:16,746 [71] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 20] Content 'Dress 2' with Id '2230' has been published.
+2014-10-14 19:57:21,846 [71] ERROR Umbraco.Web.WebApi.AngularJsonMediaTypeFormatter - [Thread 72] An error occurred writing to the output stream
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Newtonsoft.Json.JsonSerializer.GetMatchingConverter(IList`1 converters, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at System.Net.Http.Formatting.JsonMediaTypeFormatter.<>c__DisplayClassd.<WriteToStreamAsync>b__c()
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously(Action action, CancellationToken token)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Umbraco.Web.WebApi.AngularJsonMediaTypeFormatter.<WriteToStreamAsync>d__0.MoveNext()
+2014-10-14 19:57:21,846 [71] ERROR Umbraco.Web.WebApi.AngularJsonMediaTypeFormatter - [Thread 79] An error occurred writing to the output stream
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Newtonsoft.Json.JsonSerializer.GetMatchingConverter(IList`1 converters, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at System.Net.Http.Formatting.JsonMediaTypeFormatter.<>c__DisplayClassd.<WriteToStreamAsync>b__c()
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously(Action action, CancellationToken token)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Umbraco.Web.WebApi.AngularJsonMediaTypeFormatter.<WriteToStreamAsync>d__0.MoveNext()
+2014-10-14 19:57:21,864 [71] ERROR Umbraco.Web.WebApi.AngularJsonMediaTypeFormatter - [Thread 72] An error occurred writing to the output stream
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Newtonsoft.Json.JsonSerializer.GetMatchingConverter(IList`1 converters, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at System.Net.Http.Formatting.JsonMediaTypeFormatter.<>c__DisplayClassd.<WriteToStreamAsync>b__c()
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously(Action action, CancellationToken token)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Umbraco.Web.WebApi.AngularJsonMediaTypeFormatter.<WriteToStreamAsync>d__0.MoveNext()
+2014-10-14 19:57:21,864 [71] ERROR Umbraco.Web.WebApi.AngularJsonMediaTypeFormatter - [Thread 79] An error occurred writing to the output stream
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Newtonsoft.Json.JsonSerializer.GetMatchingConverter(IList`1 converters, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at System.Net.Http.Formatting.JsonMediaTypeFormatter.<>c__DisplayClassd.<WriteToStreamAsync>b__c()
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously(Action action, CancellationToken token)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Umbraco.Web.WebApi.AngularJsonMediaTypeFormatter.<WriteToStreamAsync>d__0.MoveNext()
+2014-10-14 19:57:40,231 [71] ERROR Umbraco.Web.WebApi.AngularJsonMediaTypeFormatter - [Thread 79] An error occurred writing to the output stream
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Newtonsoft.Json.JsonSerializer.GetMatchingConverter(IList`1 converters, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at System.Net.Http.Formatting.JsonMediaTypeFormatter.<>c__DisplayClassd.<WriteToStreamAsync>b__c()
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously(Action action, CancellationToken token)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Umbraco.Web.WebApi.AngularJsonMediaTypeFormatter.<WriteToStreamAsync>d__0.MoveNext()
+2014-10-14 19:57:40,231 [71] ERROR Umbraco.Web.WebApi.AngularJsonMediaTypeFormatter - [Thread 72] An error occurred writing to the output stream
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Newtonsoft.Json.JsonSerializer.GetMatchingConverter(IList`1 converters, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at System.Net.Http.Formatting.JsonMediaTypeFormatter.<>c__DisplayClassd.<WriteToStreamAsync>b__c()
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously(Action action, CancellationToken token)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Umbraco.Web.WebApi.AngularJsonMediaTypeFormatter.<WriteToStreamAsync>d__0.MoveNext()
+2014-10-14 19:57:40,232 [71] ERROR Umbraco.Web.WebApi.AngularJsonMediaTypeFormatter - [Thread 72] An error occurred writing to the output stream
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Newtonsoft.Json.JsonSerializer.GetMatchingConverter(IList`1 converters, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at System.Net.Http.Formatting.JsonMediaTypeFormatter.<>c__DisplayClassd.<WriteToStreamAsync>b__c()
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously(Action action, CancellationToken token)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Umbraco.Web.WebApi.AngularJsonMediaTypeFormatter.<WriteToStreamAsync>d__0.MoveNext()
+2014-10-14 19:57:40,232 [71] ERROR Umbraco.Web.WebApi.AngularJsonMediaTypeFormatter - [Thread 79] An error occurred writing to the output stream
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Newtonsoft.Json.JsonSerializer.GetMatchingConverter(IList`1 converters, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at System.Net.Http.Formatting.JsonMediaTypeFormatter.<>c__DisplayClassd.<WriteToStreamAsync>b__c()
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously(Action action, CancellationToken token)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Umbraco.Web.WebApi.AngularJsonMediaTypeFormatter.<WriteToStreamAsync>d__0.MoveNext()
+2014-10-14 22:14:02,119 [71] INFO  Umbraco.Web.Security.WebSecurity - [Thread 24] User Id: 0 logged in
+2014-10-14 22:15:05,242 [71] INFO  umbraco.BusinessLogic.Log - [Thread 80] Log scrubbed.  Removed all items older than 2014-08-15 22:15:05
+2014-10-14 22:15:05,244 [71] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 80] Application shutdown. Reason: ConfigurationChange
+2014-10-14 22:15:08,515 [31] INFO  Umbraco.Core.PluginManager - [Thread 18] Determining hash of code files on disk
+2014-10-14 22:15:08,527 [31] INFO  Umbraco.Core.PluginManager - [Thread 18] Hash determined (took 5ms)
+2014-10-14 22:15:08,534 [31] INFO  Umbraco.Core.PluginManager - [Thread 18] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2014-10-14 22:15:08,551 [31] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 38 (took 16ms)
+2014-10-14 22:15:08,623 [31] INFO  Umbraco.Core.PluginManager - [Thread 18] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2014-10-14 22:15:08,623 [31] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 0ms)
+2014-10-14 22:15:08,623 [31] INFO  Umbraco.Core.PluginManager - [Thread 18] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+2014-10-14 22:15:08,624 [31] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 14 (took 0ms)
+2014-10-14 22:15:08,638 [31] INFO  Umbraco.Core.PluginManager - [Thread 18] Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+2014-10-14 22:15:08,638 [31] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 8 (took 0ms)
+2014-10-14 22:15:08,638 [31] INFO  Umbraco.Core.PluginManager - [Thread 18] Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+2014-10-14 22:15:08,640 [31] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 30 (took 1ms)
+2014-10-14 22:15:08,642 [31] INFO  Umbraco.Core.PluginManager - [Thread 18] Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+2014-10-14 22:15:08,643 [31] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 0ms)
+2014-10-14 22:15:08,643 [31] INFO  Umbraco.Core.PluginManager - [Thread 18] Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+2014-10-14 22:15:08,644 [31] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 0ms)
+2014-10-14 22:15:09,228 [31] INFO  Umbraco.Core.PluginManager - [Thread 18] Starting resolution types of umbraco.interfaces.IApplication
+2014-10-14 22:15:09,228 [31] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 0ms)
+2014-10-14 22:15:09,372 [31] INFO  Umbraco.Core.PluginManager - [Thread 18] Starting resolution types of Umbraco.Web.Trees.TreeController
+2014-10-14 22:15:09,372 [31] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 0ms)
+2014-10-14 22:15:09,382 [31] INFO  Umbraco.Core.PluginManager - [Thread 18] Starting resolution types of umbraco.interfaces.ITree
+2014-10-14 22:15:09,382 [31] INFO  Umbraco.Core.PluginManager - [Thread 18] Completed resolution of types of umbraco.interfaces.ITree, found 19 (took 0ms)
+2014-10-14 22:15:09,389 [31] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 18] Initializing Examine and binding to business logic events
+2014-10-14 22:15:09,389 [31] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 18] Adding examine event handlers for index providers: 3
+2014-10-14 22:15:14,116 [31] INFO  Umbraco.Core.PluginManager - [Thread 57] Starting resolution types of umbraco.interfaces.ITree
+2014-10-14 22:15:14,116 [31] INFO  Umbraco.Core.PluginManager - [Thread 57] Completed resolution of types of umbraco.interfaces.ITree, found 35 (took 0ms)
+2014-10-14 22:16:56,039 [31] INFO  umbraco.BusinessLogic.Log - [Thread 9] Log scrubbed.  Removed all items older than 2014-08-15 22:16:56
+2014-10-14 22:16:56,040 [31] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 9] Application shutdown. Reason: ConfigurationChange
+2014-10-14 22:16:56,650 [88] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2014-10-14 22:16:56,664 [88] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 5ms)
+2014-10-14 22:16:56,671 [88] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2014-10-14 22:16:56,688 [88] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 38 (took 16ms)
+2014-10-14 22:16:56,762 [88] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2014-10-14 22:16:56,763 [88] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 0ms)
+2014-10-14 22:16:56,763 [88] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+2014-10-14 22:16:56,764 [88] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 14 (took 0ms)
+2014-10-14 22:16:56,778 [88] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+2014-10-14 22:16:56,778 [88] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 8 (took 0ms)
+2014-10-14 22:16:56,779 [88] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+2014-10-14 22:16:56,780 [88] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 30 (took 1ms)
+2014-10-14 22:16:56,783 [88] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+2014-10-14 22:16:56,783 [88] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 0ms)
+2014-10-14 22:16:56,783 [88] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+2014-10-14 22:16:56,783 [88] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 0ms)
+2014-10-14 22:16:57,403 [88] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.IApplication
+2014-10-14 22:16:57,404 [88] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 0ms)
+2014-10-14 22:16:57,552 [88] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Web.Trees.TreeController
+2014-10-14 22:16:57,553 [88] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 0ms)
+2014-10-14 22:16:57,563 [88] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.ITree
+2014-10-14 22:16:57,563 [88] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 19 (took 0ms)
+2014-10-14 22:16:57,570 [88] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 1] Initializing Examine and binding to business logic events
+2014-10-14 22:16:57,571 [88] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 1] Adding examine event handlers for index providers: 3
+2014-10-14 22:17:03,428 [88] INFO  umbraco.BusinessLogic.Log - [Thread 57] Log scrubbed.  Removed all items older than 2014-08-15 22:17:03
+2014-10-14 22:17:03,430 [88] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 57] Application shutdown. Reason: ConfigurationChange
+2014-10-14 22:17:30,555 [28] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2014-10-14 22:17:30,568 [28] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 5ms)
+2014-10-14 22:17:30,575 [28] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2014-10-14 22:17:30,593 [28] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 38 (took 17ms)
+2014-10-14 22:17:30,667 [28] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2014-10-14 22:17:30,667 [28] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 0ms)
+2014-10-14 22:17:30,668 [28] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+2014-10-14 22:17:30,668 [28] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 14 (took 0ms)
+2014-10-14 22:17:30,682 [28] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+2014-10-14 22:17:30,683 [28] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 8 (took 0ms)
+2014-10-14 22:17:30,683 [28] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+2014-10-14 22:17:30,685 [28] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 30 (took 1ms)
+2014-10-14 22:17:30,687 [28] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+2014-10-14 22:17:30,688 [28] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 0ms)
+2014-10-14 22:17:30,688 [28] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+2014-10-14 22:17:30,688 [28] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 0ms)
+2014-10-14 22:17:31,292 [28] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.IApplication
+2014-10-14 22:17:31,292 [28] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 0ms)
+2014-10-14 22:17:31,443 [28] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Web.Trees.TreeController
+2014-10-14 22:17:31,443 [28] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Trees.TreeController, found 4 (took 0ms)
+2014-10-14 22:17:31,453 [28] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.ITree
+2014-10-14 22:17:31,454 [28] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 19 (took 0ms)
+2014-10-14 22:17:31,460 [28] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 1] Initializing Examine and binding to business logic events
+2014-10-14 22:17:31,461 [28] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 1] Adding examine event handlers for index providers: 3
+2014-10-14 22:19:38,825 [28] INFO  Umbraco.Core.PluginManager - [Thread 48] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+2014-10-14 22:19:38,826 [28] INFO  Umbraco.Core.PluginManager - [Thread 48] Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 22 (took 0ms)
+2014-10-14 22:19:38,885 [28] INFO  umbraco.content - [Thread 48] Loading content from disk cache...
+2014-10-14 22:19:38,930 [28] INFO  Umbraco.Core.PluginManager - [Thread 48] Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+2014-10-14 22:19:38,931 [28] INFO  Umbraco.Core.PluginManager - [Thread 48] Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 43 (took 0ms)
+2014-10-14 22:20:01,203 [28] INFO  Umbraco.Core.PluginManager - [Thread 9] Starting resolution types of umbraco.interfaces.ITree
+2014-10-14 22:20:01,204 [28] INFO  Umbraco.Core.PluginManager - [Thread 9] Completed resolution of types of umbraco.interfaces.ITree, found 35 (took 0ms)
+2014-10-14 22:20:16,240 [28] INFO  Umbraco.Core.PluginManager - [Thread 31] Starting resolution types of umbraco.interfaces.ICacheRefresher
+2014-10-14 22:20:16,241 [28] INFO  Umbraco.Core.PluginManager - [Thread 31] Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 20 (took 0ms)
+2014-10-14 22:20:31,899 [28] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 57] Content 'Custom Wedding Collection' with Id '1091' has been published.
+2014-10-14 22:20:38,264 [28] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 57] An unhandled exception occurred
+System.InvalidOperationException: The model item passed into the dictionary is of type 'Umbraco.Web.Models.RenderModel', but this dictionary requires a model item of type 'GretaKate.Web.Models.DressModel'.
+   at System.Web.Mvc.ViewDataDictionary`1.SetModel(Object value)
+   at System.Web.Mvc.ViewDataDictionary..ctor(ViewDataDictionary dictionary)
+   at System.Web.Mvc.WebViewPage`1.SetViewData(ViewDataDictionary viewData)
+   at Umbraco.Web.Mvc.UmbracoViewPage`1.SetViewData(ViewDataDictionary viewData)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at Umbraco.Core.Profiling.ProfilingView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__19()
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass1.<MakeVoidDelegate>b__0()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

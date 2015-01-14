@@ -1,0 +1,17 @@
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+@if (CurrentPage.HasValue("imageGallery"))
+{
+    string mediaItems = CurrentPage.ImageGallery.ToString();
+    <div id="imagegallery" class="flexslider">
+        <ul class="slides">
+            @foreach (var image in mediaItems.Split(',').Select(x => Umbraco.Media(int.Parse(x))))
+            {
+                <li data-thumb="@image.Url">
+                    <img class="image full" src="@image.Url" alt="@image.Title" />
+                </li>
+            }
+        </ul>
+        <div id="gallerycontrols"></div>
+    </div>
+}

@@ -1,0 +1,39 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var homePage = CurrentPage.AncestorsOrSelf(1).First();
+}
+@*<section class="-6u 6u">*@
+    <div class="row no-collapse-1">
+        <ul style="margin: 0;">
+            @RenderLinkIfNotEmpty(homePage.FacebookLink, "Facebook")
+            @RenderLinkIfNotEmpty(homePage.InstagramLink, "Instagram")
+            @RenderLinkIfNotEmpty(homePage.YouTubeLink, "YouTube")
+        </ul>
+        @*<ul class="divided icons 6u">
+            @RenderLinkIfNotEmpty(homePage.FacebookLink, "Facebook")
+            @RenderLinkIfNotEmpty(homePage.PinterestLink, "Pinterest")
+        </ul>
+        <ul class="divided icons 6u">
+            @RenderLinkIfNotEmpty(homePage.InstagramLink, "Instagram")
+            @RenderLinkIfNotEmpty(homePage.YouTubeLink, "YouTube")
+        </ul>*@
+    </div>
+@*</section>*@
+@helper RenderLinkIfNotEmpty(string link, string cssClass)
+{
+    // A helper function is handy when you have to do the same thing over and over again
+    // So now we only have to write the "if" check and list item once, and we only need
+    // to put in the things that can vary
+    
+    if (!string.IsNullOrEmpty(link))
+    {
+		@*var uri = new Uri(link);
+        var host = uri.Host.Replace("www.", "");
+        var path = uri.Segments[uri.Segments.Count() - 1];
+        <li class="fa fa-@cssClass"><a href="@link"><span class="extra">@host/</span>@path</a></li>
+        <li class="fa fa-@cssClass.ToLower()"><a href="@link">@cssClass</a></li>*@
+        <a href="@link" style="display: inline-block; padding-right: 1em; border-bottom: none;">
+            <li class="fa fa-@cssClass.ToLower()"></li>
+        </a>
+    }
+}

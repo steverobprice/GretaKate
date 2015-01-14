@@ -1,0 +1,26 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var homePage = CurrentPage.AncestorsOrSelf(1).First();
+}
+
+@if (!string.IsNullOrEmpty(homePage.location.ToString()))
+{
+    <div class="row flush no-collapse" style="margin-bottom:1em;">
+        <div class="1u fa fa-map-marker">
+        </div>
+        <div class="11u">
+            @homePage.location
+        </div>
+    </div>
+}
+
+@if (!string.IsNullOrEmpty(homePage.OpeningHours.ToString()))
+{
+    <div class="row flush no-collapse">
+        <div class="1u fa fa-clock-o">
+        </div>
+        <div class="11u">
+            @homePage.OpeningHours
+        </div>
+    </div>
+}

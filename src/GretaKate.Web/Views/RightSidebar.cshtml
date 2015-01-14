@@ -1,0 +1,44 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Layout.cshtml";
+    var heroImage = Umbraco.Media((int)CurrentPage.heroImage);
+}
+<!-- Main Wrapper -->
+<div class="wrapper">
+
+	<div class="container">
+		<div class="row" id="main">
+			<div class="8u">
+					
+				<!-- Content -->
+				<article id="content">
+					<header>
+						<h2>@CurrentPage.Title</h2>
+						<span>@CurrentPage.Summary</span>
+					</header>
+					
+					<img class="image full" src="@heroImage.Url" alt="" />
+					
+					@CurrentPage.BodyText
+					
+					@{ Html.RenderPartial("ImageGallery"); }
+				
+				</article>
+
+			</div>
+			<div class="4u">
+
+				<!-- Sidebar -->
+				<section id="sidebar">
+					@{ Html.RenderPartial("SidebarEnquirySection"); }
+
+					@{ Html.RenderPartial("SidebarRelatedContent"); }
+				</section>
+					
+			</div>
+            
+            @{ Html.RenderAction("Index", "Dress"); }
+		</div>
+	</div>
+
+</div>

@@ -1,0 +1,48 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{    
+    var features = CurrentPage.ContentPages.Where("featuredPage").Take(3);
+	var firstClass = "first";
+}
+@if(features.Any()){
+	<!-- Features -->
+	<div class="wrapper">
+
+		<div class="container">
+			<div class="row">
+				@foreach(var feature in features)
+				{
+					<section class="4u feature">
+						<div class="image-wrapper @firstClass">
+							<a href="@feature.Url" class="image full">
+								<img src="@Umbraco.Media((int)feature.heroImage).Url" alt="" />
+							</a>
+						</div>
+						<p>@feature.Summary</p>
+                        <ul class="actions major hide-n1 hide-n2 hide-n3">
+                            <li>
+                                <a href="@feature.Url" class="button">@feature.Title</a>
+                            </li>
+                        </ul>
+					</section>
+					firstClass = string.Empty;
+				}
+			</div>
+		</div>
+				
+		<section class="container hide-n4 hide-n5 hide-n6">
+			<div class="row">
+				@foreach(var feature in features)
+				{
+					<section class="4u feature">
+						<ul class="actions major">
+							<li>
+								<a href="@feature.Url" class="button">@feature.Title</a>
+							</li>
+						</ul>
+					</section>
+				}
+			</div>
+		</section>
+
+	</div>
+}

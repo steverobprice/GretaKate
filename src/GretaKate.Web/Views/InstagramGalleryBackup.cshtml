@@ -1,0 +1,36 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Layout.cshtml";
+}
+
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+<script src="/js/instagram.gallery.js"></script>
+
+<div class="wrapper" ng-app="instagram" >
+    <div class="container" ng-controller="InstagramCtrl" when-scrolled="loadPhotos()">
+        <div class="row">
+            <div id="instagram-gallery" class="12u">
+                <div class="row">
+                    <div class="3u" ng-repeat="photo in photos">
+                        <div class="image-wrapper">
+                            <a ng-href="{{photo.images.standard_resolution.url}}" class="image full fancybox" target="_blank">
+                                <img class="main" ng-src="{{photo.images.low_resolution.url}}" />
+                            </a>
+                            <span class="heart">{{photo.likes.count}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="loading" class="12u feature" ng-show="isLoading">
+                <img src="/css/images/ajax_loader.gif" />
+            </div>
+            @*<div id="load-more-section" class="12u feature">
+                <ul class="actions major">
+                    <li>
+                        <a id="load-more" class="button" ng-click="loadPhotos()">Load More</a>
+                    </li>
+                </ul>
+            </div>*@
+        </div>
+    </div>
+</div>

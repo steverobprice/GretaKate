@@ -1,0 +1,2 @@
+﻿2014-09-25 00:04:57,405 [7] INFO  umbraco.BusinessLogic.Log - [Thread 30] Log scrubbed.  Removed all items older than 2014-07-27 00:04:57
+2014-09-25 00:04:57,408 [7] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 30] Application shutdown. Reason: HostingEnvironment

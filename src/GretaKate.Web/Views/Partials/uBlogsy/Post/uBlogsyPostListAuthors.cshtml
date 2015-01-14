@@ -1,0 +1,39 @@
+@*
+    Lists Authors for a post. Gets called from /Landing/uBlogsyLandingShowPost.cshtml and /Post/uBlogsyPostShowPost.cshtml
+*@
+
+@using System.Linq
+@using uBlogsy.Common.Helpers
+@using uBlogsy.BusinessLogic;
+@using uHelpsy.Helpers
+@inherits UmbracoTemplatePage
+@{
+    var node = (IPublishedContent)ViewData["Node"] ?? Model.Content;
+    var landing = DataService.Instance.GetLanding(Model.Content);
+    var gravatarSize = (int)ViewData["GravatarSize"];
+    var authors = PostService.Instance.GetAuthors(node, false); 
+    
+    @RenderForPost(landing, authors, gravatarSize, node.GetPropertyValue<DateTime>("uBlogsyPostDate"))
+}
+
+
+@helper RenderForPost(IPublishedContent landing,  IEnumerable<IPublishedContent> authors, int gravatarSize, DateTime postDate)
+{
+    var trimmedAuthors = authors.Select(a => a.GetPropertyValue<string>("uBlogsyAuthorName").Trim())
+                      .Where(a => !string.IsNullOrEmpty(a))
+                      .ToList();
+
+    if (trimmedAuthors.Any())
+    {
+        <span>@Umbraco.GetDictionaryValue("uBlogsyDicPostWrittenBy")</span>
+    
+        foreach (var author in trimmedAuthors)
+        {
+            <a href="@landing.Url()?author=@Server.UrlEncode(author)" title="@author">@author</a>
+            if (author != trimmedAuthors.Last())
+            {
+                <span>,</span>
+            }
+        }
+    }
+}

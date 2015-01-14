@@ -1,0 +1,30 @@
+$grey: #666;
+
+$body-font-family: Georgia, "Times New Roman", serif;
+$body-font-color: $grey;
+$body-text-transform: uppercase;
+
+$heading-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+
+$transparent: rgba(0,0,0,0);
+$half-transparent: rgba(0,0,0,0.5);
+
+$small-range: (0em, 48em) !default;
+$medium-range: (48.063em, 64em) !default;
+//$large-range: (65.063em, 90em);
+
+// TOP BAR
+
+$topbar-bg-color: $transparent !default;
+$topbar-bg: $topbar-bg-color !default;
+$topbar-dropdown-bg: $transparent !default;
+$topbar-dropdown-link-bg: $half-transparent !default;
+$topbar-link-bg-hover: $transparent !default;
+$topbar-link-bg-color-hover: $transparent !default;
+
+$topbar-link-text-transform: uppercase !default;
+$topbar-dropdown-label-text-transform: uppercase !default;
+
+// OFF CANVAS
+
+//$tabbar-height: rem-calc(70);

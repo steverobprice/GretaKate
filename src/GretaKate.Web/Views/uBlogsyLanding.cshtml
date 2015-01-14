@@ -1,0 +1,39 @@
+﻿@*
+    Landing layout.
+*@
+@inherits UmbracoTemplatePage
+@{
+    Layout = "_Layout.cshtml";
+}
+
+<script src="/js/jquery.min.js"></script>
+
+<div class="row blog">
+    <div class="large-7 columns">
+        @if (Request.QueryString.Count == 0)
+        {
+            <!-- Content -->
+            @*<article id="content">
+                @Umbraco.Field("uBlogsyContentBody")
+            </article>*@
+        }
+
+        @*list posts*@
+        <section class="uBlogsy_posts_container">
+            @Html.CachedPartial("uBlogsy/Landing/uBlogsyLandingListPosts", Model, 0, false, false, new ViewDataDictionary(ViewData) { { "ItemsPerPage", 20 } })
+        </section>
+    </div>
+    <div class="large-4 large-offset-1 columns">
+        <section>
+            @Umbraco.Field("uBlogsyContentBody")
+        </section>
+
+        @Html.CachedPartial("uBlogsy/Widgets/uBlogsyWidgetListPostArchive", Model, 0, false, false, new ViewDataDictionary(ViewData) { { "AltLayout", false } })
+
+        @*the awesome tag cloud*@
+        @Html.CachedPartial("uBlogsy/Widgets/uBlogsyWidgetListTags", Model, 0, false, false, new ViewDataDictionary(ViewData) { { "ShowCount", true } })
+
+        @*list of latest posts*@
+        @*Html.CachedPartial("uBlogsy/Widgets/uBlogsyWidgetListPosts", Model, 0, false, false, new ViewDataDictionary(ViewData) { { "ItemLimit", 5 } })*@
+    </div>
+</div>

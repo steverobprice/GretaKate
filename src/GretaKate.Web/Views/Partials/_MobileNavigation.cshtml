@@ -1,0 +1,45 @@
+﻿@using GretaKate.Web.Models;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<NavigationModel>
+
+<nav class="tab-bar show-for-small @(Model.IsHomePage ? "home" : string.Empty)">
+    <section class="left-small">
+        <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+    </section>
+
+    <section class="middle tab-bar-section">
+        <div class="row logo">
+            <div class="small-12 columns">
+                <a href="/">
+                    <img src="/css/images/logo.png" alt="@Umbraco.Field("siteName", recursive: true)" class="logo" />
+                </a>
+            </div>
+        </div>
+    </section>
+</nav>
+
+<!-- Off Canvas Menu -->
+<aside class="left-off-canvas-menu">
+    <ul class="off-canvas-list">
+        @foreach (var item in Model.NavigationItems)
+        {
+            if (item.HasChildren)
+            {
+                <li class="has-submenu">
+                    <a href="#">@item.Name</a>
+                    <ul class="left-submenu">
+                        <li class="back"><a href="#">Back</a></li>
+                        <li><a href="@item.Url">@item.Name</a></li>
+                        @foreach (var child in item.Children)
+                        {
+                            <li><a href="@child.Url">@child.Name</a></li>
+                        }
+                    </ul>
+                </li>
+            }
+            else
+            {
+                <li><a href="@item.Url">@item.Name</a></li>
+            }
+        }
+    </ul>
+</aside>

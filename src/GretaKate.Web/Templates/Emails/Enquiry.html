@@ -1,0 +1,59 @@
+﻿<html>
+<head>
+    <title>Enquiry Form</title>
+
+    <!--
+    Sorry, your email software cannot view HTML.
+    Please login to cManager to view the notification.
+
+    The text below will only display in HTML capable email software.
+    Please ignore anything below this paragraph.
+    -->
+
+    <style type="text/css">
+        a {
+            color: #3793C8;
+        }
+
+        .headingCell {
+            color: #6A6C6C;
+            font-weight: bold;
+            font-size: 11pt;
+            border-bottom: 1px solid #B6BCC1;
+        }
+
+        .dataCell {
+            font-size: 11pt;
+            color: #6A6C6C;
+            border-bottom: 1px solid #B6BCC1;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Begin of Notification Header -->
+    <div style="font-size: 14px; font-family: Arial, Helvetica, sans-serif; color: #6A6C6C;">
+
+        <p>Hello,</p>
+
+        <p>The following enquiry has been sent via the enquiry form.</p>
+
+        <p>
+            Name: <em>{{Name}}</em><br />
+            Email: <em>{{Email}}</em>
+        </p>
+
+        <h4 style="font-size:16px; font-family:Arial,Helvetica,sans-serif; padding-top:3px; margin-bottom: 3px; clear: left">
+            Message
+        </h4>
+
+        <!-- Begin of Message -->
+        {{Message}}
+        <!-- End of Message -->
+
+    </div>
+    <!-- End of Notification Header -->
+
+</body>
+</html>
