@@ -1,0 +1,46 @@
+﻿/**********************************************
+ left col
+***********************************************/
+
+/*.uBlogsy_posts_container .uBlogsy_post_image{ float: left; margin: 0 20px 20px 0}*/
+.uBlogsy_post_body p, .uBlogsy_post_body ul, .uBlogsy_post_body h5 { margin-bottom:0; }
+.uBlogsy_post_body a { border-bottom:none; }
+.uBlogsy_post_body h2, .uBlogsy_post_body h2>a { line-height:1em; }
+.uBlogsy_post_body .uBlogsy_post_date, .uBlogsy_post_body ul>li { display:inline-block; padding-right:10px; }
+.uBlogsy_post_body ul { display:inline-block; }
+.uBlogsy_post_body .uBlogsy_bottom_border { border-bottom: solid 1px #d2d7dc; padding-bottom: 0.5em; margin-bottom: 0.5em; }
+.uBlogsy_post_body .narrow_gutter { padding-left:1em; }
+
+.uBlogsy_post a { border-bottom:none; }
+.uBlogsy_post .uBlogsy_author, .uBlogsy_post ul { display: inline-block; }
+.uBlogsy_post h5, .uBlogsy_post ul>li { display:inline-block; padding-right:10px; }
+
+.uBlogsy_tag_container a { border-bottom:none; }
+.uBlogsy_posts_container a { border-bottom:none; }
+.uBlogsy_related_posts_container a { border-bottom:none; }
+
+/**********************************************
+ right col 
+***********************************************/
+
+/* right col - post archive */
+#uBlogsy_post_archive a { border-bottom:none; }
+#uBlogsy_post_archive ul {  list-style-type:none; margin-bottom:0; }
+#uBlogsy_post_archive ul ul { padding-left:15px; }
+
+#uBlogsy_post_archive .uBlogsy_post_items {display:none; margin-top:0;}
+#uBlogsy_post_archive .uBlogsy_months{display:none;}
+
+#uBlogsy_post_archive .uBlogsy_current{ font-weight: bold;}
+
+/**********************************************
+ pagination 
+***********************************************/
+/* pagination - landing */
+#uBlogsy_pagination { display:block; float:right; overflow:hidden;}
+#uBlogsy_pagination li{ list-style-type:none; display:inline-block; float:left; padding: 0 4px 0 0;}
+#uBlogsy_pagination li a { display:block; padding :3px 0 0 6px; }
+#uBlogsy_pagination li.uBlogsy_page_prev span, #uBlogsy_pagination li.uBlogsy_page_next span { display:block; padding :2px 0 0 5px; color:#CCC}
+#uBlogsy_pagination .uBlogsy_page_next, #uBlogsy_pagination .uBlogsy_page_prev{ width:40px;}
+#uBlogsy_pagination li.uBlogsy_current a{font-weight:bold;}
+#uBlogsy_pagination li.uBlogsy_current span{padding:2px 0 0 6px; display:block;}
