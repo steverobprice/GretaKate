@@ -39,8 +39,16 @@
     <Reference Include="mustache-sharp">
       <HintPath>..\packages\mustache-sharp.0.2.4.0\lib\net40\mustache-sharp.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.WebRequest" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -59,7 +67,10 @@
     <Compile Include="CollectionService.cs" />
     <Compile Include="DressService.cs" />
     <Compile Include="EmailService.cs" />
+    <Compile Include="InstagramService.cs" />
     <Compile Include="Models\BaseDto.cs" />
+    <Compile Include="Models\UserInfo.cs" />
+    <Compile Include="Models\OAuthResponse.cs" />
     <Compile Include="Models\CollectionDto.cs" />
     <Compile Include="Models\DressDto.cs" />
     <Compile Include="Models\FooterDto.cs" />
@@ -73,7 +84,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GretaKate.Core\GretaKate.Core.csproj">

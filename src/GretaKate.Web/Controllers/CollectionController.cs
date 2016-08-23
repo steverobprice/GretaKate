@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using Umbraco.Web.Mvc;
+﻿using Umbraco.Web.Mvc;
 using GretaKate.Services;
 using System.Web.Mvc;
 using GretaKate.Web.Models;
@@ -12,12 +8,10 @@ namespace GretaKate.Web.Controllers
 {
     public class CollectionController : RenderMvcController
     {
-        private readonly ICollectionService _collectionService;
         private readonly IDressService _dressService;
 
-        public CollectionController(ICollectionService collectionService, IDressService dressService)
+        public CollectionController(IDressService dressService)
         {
-            _collectionService = collectionService;
             _dressService = dressService;
         }
 

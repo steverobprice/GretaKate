@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GretaKate.Core.Consts
+﻿namespace GretaKate.Core.Consts
 {
     public sealed class Settings
     {
@@ -12,5 +6,8 @@ namespace GretaKate.Core.Consts
         public static string EmailTemplatePath = "EmailTemplatePath";
         public static string EnquiryEmailTemplate = "EnquiryEmailTemplate";
         public static string EnquiryEmailAddress = "EnquiryEmailAddress";
+        public static string InstagramClientId = "InstagramClientId";
+        public static string InstagramClientSecret = "InstagramClientSecret";
+        public static string InstagramRedirectUri = "InstagramRedirectUri";
     }
 }
