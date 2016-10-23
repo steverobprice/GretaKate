@@ -13,7 +13,7 @@ instagram.factory('instaPhotos', ['$http', function ($http) {
 }]);
 
 instagram.controller('InstagramCtrl', ['$scope', 'instaPhotos', function ($scope, instaPhotos) {
-    $scope.endpoint = "https://api.instagram.com/v1/users/19483745/media/recent/?client_id=0e1a378bb152469d8be0749a4a02bbd3&callback=JSON_CALLBACK";
+    $scope.endpoint = "https://api.instagram.com/v1/users/19483745/media/recent/?access_token=1406045013.3a81a9f.7c505432dfd3455ba8e16af5a892b4f7&callback=JSON_CALLBACK";
     $scope.url = $scope.endpoint;
     $scope.data = null;
     $scope.photos = [];
