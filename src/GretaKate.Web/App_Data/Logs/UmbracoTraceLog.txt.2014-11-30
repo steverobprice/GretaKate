@@ -1,6 +1,0 @@
-﻿2014-11-30 05:41:51,381 [7] INFO  umbraco.content - [Thread 48] Loading content from disk cache...
-2014-11-30 05:41:51,522 [7] INFO  Umbraco.Core.PluginManager - [Thread 48] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
-2014-11-30 05:41:51,522 [7] INFO  Umbraco.Core.PluginManager - [Thread 48] Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 22 (took 2ms)
-2014-11-30 05:41:51,822 [7] INFO  Umbraco.Core.PluginManager - [Thread 48] Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
-2014-11-30 05:41:51,822 [7] INFO  Umbraco.Core.PluginManager - [Thread 48] Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 43 (took 5ms)
-2014-11-30 23:27:36,225 [7] INFO  umbraco.BusinessLogic.Log - [Thread 30] Log scrubbed.  Removed all items older than 2014-10-01 23:27:36
