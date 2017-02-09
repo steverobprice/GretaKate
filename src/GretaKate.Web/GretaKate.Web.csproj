@@ -21,6 +21,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <NuGetPackageImportStamp>dd503dd5</NuGetPackageImportStamp>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -364,7 +365,6 @@
     <Content Include="js\jquery.flexslider-min.js" />
     <Content Include="js\jquery.flexslider.js" />
     <Content Include="js\jquery.min.js" />
-    <Content Include="media\dummy.txt" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
