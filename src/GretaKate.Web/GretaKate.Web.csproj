@@ -245,6 +245,7 @@
     <Content Include="css\images\overlay.png" />
     <Content Include="css\images\toggle.svg" />
     <Content Include="css\images\websiteheader.jpg" />
+    <Content Include="favicon.jpg" />
     <Content Include="Images\facebook-48.png" />
     <Content Include="Images\instagram-48.png" />
     <Content Include="Images\pinterest-48.png" />
@@ -350,10 +351,6 @@
     <Content Include="Views\Partials\uBlogsy\Post\uBlogsyPostListAuthors.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-      <SubType>Designer</SubType>
     </None>
     <Content Include="xslt\Web.config" />
   </ItemGroup>
